@@ -1,0 +1,39 @@
+h2 {
+  text-align: center;
+}
+.container {
+  background-color: #d9e7ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  &__image,
+  &__data {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    flex: 1;
+    & img {
+      max-width: 600px;
+    }
+  }
+  &__data {
+    background-color: #f0f5ff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &-checkbox {
+      padding-bottom: 20px;
+      display: block;
+    }
+  }
+}
